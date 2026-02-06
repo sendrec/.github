@@ -15,8 +15,11 @@ Open source (AGPLv3), GDPR native, hosted entirely in the EU.
 ```bash
 git clone https://github.com/sendrec/sendrec.git
 cd sendrec
-docker compose up -d
+cp .env.example .env
+docker compose -f docker-compose.dev.yml up --build
 ```
+
+Open http://localhost:8080, register an account, and start recording.
 
 ### Contributing
 
